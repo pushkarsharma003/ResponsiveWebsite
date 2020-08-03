@@ -75,14 +75,47 @@ body {
     border: 1px solid #61122f;
 }
 
+#menu-tile, #specials-tile, #map-tile{
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+}
+#menu-tile{
+    background: url('../images/menu-tile.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#specials-tile{
+    background: url('../images/specials-tile.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#menu-tile:hover ,#specials-tile:hover ,#map-tile:hover{
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+#menu-tile span, #specials-tile span, #map-tile span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: 0.8;
+}
 
 /*for extra-small devices*/
-@media (max-width:575px){
+@media (max-width:575px) and (min-width:280px){
     .navbar-brand h1{
-        font-size: 1em;
+        font-size: 1.4em;
     }
     .navbar-brand p{
-        font-size: .57em;
+        font-size: .7em;
         margin-top: 10px;
     }
     .nav-item{
@@ -116,7 +149,7 @@ body {
     }
     .jumbotron{
         margin-top: 30px;
-        padding: 0;
+        padding: 0px;
         box-shadow: 0 0 50px #3f0c1f;
         border: 2px solid #3f0c1f;
     }
@@ -126,20 +159,20 @@ body {
 /*for small devices*/
 @media (min-width:576px) and (max-width:767px){
     .navbar-brand h1{
-        font-size: 1em;
+        font-size: 0.7em;
     }
     .navbar-brand p{
-        font-size: .57em;
+        font-size: .5em;
         margin-top: 10px;
     }
     .nav-item{
-        font-size: medium;
+        font-size: small;
     }
     .nav-item a span {
         font-size: 1em;
     }
     #phone a {
-        font-size: 20px;
+        font-size: medium;
     }
     #phone div{
         text-align: right;
@@ -152,32 +185,32 @@ body {
         box-shadow: 0 0 50px #3f0c1f;
         border: 2px solid #3f0c1f;
         margin-top: 20px;
-    }   
+    }
 }
 
 
 /*for medium devices*/
 @media (min-width:768px) and (max-width:991px){
     .logo-img{
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
         margin: 5px 5px 5px 0px;
     }
     .navbar-brand h1{
-        font-size: 1.1em;
+        font-size: .9em;
     }
     .navbar-brand p{
         font-size: .57em;
         margin-top: 10px;
     }
     .nav-item{
-        font-size: medium;
+        font-size: small;
     }
     .nav-item a span {
         font-size: 1em;
     }
     #phone a {
-        font-size: large;
+        font-size: medium;
     }
     #phone div{
         text-align: right;
@@ -197,9 +230,30 @@ body {
 /*for large devices*/
 @media (min-width:992px) and (max-width:1199px){
     .logo-img{
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
         margin: 5px 5px 5px 0px;
+    }
+    .navbar-brand h1{
+        font-size: 1.2em;
+    }
+    .navbar-brand p{
+        font-size: .57em;
+        margin-top: 10px;
+    }
+    .nav-item{
+        font-size: large;
+    }
+    .nav-item a span {
+        font-size: 1.1em;
+    }
+    #phone a {
+        font-size: x-large;
+    }
+    #phone div{
+        text-align: right;
+        padding-right: 10px;
+        font-size: x-small;
     }
     .jumbotron{
         background: url('../images/jumbotron_992.jpg') no-repeat;
