@@ -1,0 +1,223 @@
+body {
+    font-size: 20px;
+    background-color: #61122f;
+    color: #fff;
+    font-family: 'Oxygen',sans-serif;
+}
+.navbar{
+    background-color: #f6b319;
+}
+.logo-img{
+    width: 150px;
+    height: 150px;
+    margin: 10px 15px 10px 0px;
+}
+.navbar-brand{
+    padding-top: 25px;
+}
+.navbar-brand h1{
+    font-family: 'Lora',serif;
+    color: #557c3e;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+}
+.navbar-brand a:hover , .navbar-brand a:focus{
+    text-decoration: none;   
+}
+.navbar-brand p{
+    color: #000;
+    text-transform: uppercase;
+    font-size: .7em;
+    margin-top: 15px;
+}
+.navbar-brand p span{
+    vertical-align: middle;
+}
+.nav-item{
+    margin-top: 10px;
+}
+.nav-item a{
+    color: #951c49;
+    text-align: center;
+}
+.nav-item a:hover{
+    background: #e7e7e7;
+}
+.nav-item a span {
+    font-size: 1.2em;
+}
+#phone{
+    margin-top: 5px;
+}
+#phone a {
+    text-align: right;
+    padding-bottom: 0px;
+    color: #951c49;    
+    font-size: xx-large;
+    padding: 4px 14px;
+}
+#phone a:hover{
+    background-color: #e7e7e7;
+    text-decoration: none;
+}
+#phone div{
+    color: #557c3e;
+    text-align: right;
+    padding-right: 15px;
+    font-size: small;
+}
+.navbar-toggler{ 
+    border: 1px solid #61122f;
+}
+
+
+/*for extra-small devices*/
+@media (max-width:575px){
+    .navbar-brand h1{
+        font-size: 1em;
+    }
+    .navbar-brand p{
+        font-size: .57em;
+        margin-top: 10px;
+    }
+    .nav-item{
+        font-size: small;
+    }
+    .nav-item a span {
+        font-size: 1em;
+    }
+    #phone a {
+        font-size: large;
+    }
+    #phone div{
+        text-align: right;
+        padding-right: 10px;
+        font-size: x-small;
+    }
+    #call-btn > a{
+        font-size: 1.5em;
+        display: block;
+        margin: 20px;
+        padding: 10px 10px 10px 10px;
+        border: 2px solid #fff;
+        background-color: #f6b319;
+        color: #951c49;
+    }
+    #xs-deliever{
+        margin-top: 5px;
+        font-size: .7em;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+    }
+    .jumbotron{
+        margin-top: 30px;
+        padding: 0;
+        box-shadow: 0 0 50px #3f0c1f;
+        border: 2px solid #3f0c1f;
+    }
+}
+
+
+/*for small devices*/
+@media (min-width:576px) and (max-width:767px){
+    .navbar-brand h1{
+        font-size: 1em;
+    }
+    .navbar-brand p{
+        font-size: .57em;
+        margin-top: 10px;
+    }
+    .nav-item{
+        font-size: medium;
+    }
+    .nav-item a span {
+        font-size: 1em;
+    }
+    #phone a {
+        font-size: 20px;
+    }
+    #phone div{
+        text-align: right;
+        padding-right: 10px;
+        font-size: x-small;
+    }
+    .jumbotron{
+        background: url('../images/jumbotron_768.jpg') no-repeat;
+        height: 432px;
+        box-shadow: 0 0 50px #3f0c1f;
+        border: 2px solid #3f0c1f;
+        margin-top: 20px;
+    }   
+}
+
+
+/*for medium devices*/
+@media (min-width:768px) and (max-width:991px){
+    .logo-img{
+        width: 100px;
+        height: 100px;
+        margin: 5px 5px 5px 0px;
+    }
+    .navbar-brand h1{
+        font-size: 1.1em;
+    }
+    .navbar-brand p{
+        font-size: .57em;
+        margin-top: 10px;
+    }
+    .nav-item{
+        font-size: medium;
+    }
+    .nav-item a span {
+        font-size: 1em;
+    }
+    #phone a {
+        font-size: large;
+    }
+    #phone div{
+        text-align: right;
+        padding-right: 10px;
+        font-size: x-small;
+    }
+    .jumbotron{
+        background: url('../images/jumbotron_768.jpg') no-repeat;
+        height: 432px;
+        box-shadow: 0 0 50px #3f0c1f;
+        border: 2px solid #3f0c1f;
+        margin-top: 20px;
+    }
+}
+
+
+/*for large devices*/
+@media (min-width:992px) and (max-width:1199px){
+    .logo-img{
+        width: 120px;
+        height: 120px;
+        margin: 5px 5px 5px 0px;
+    }
+    .jumbotron{
+        background: url('../images/jumbotron_992.jpg') no-repeat;
+        height: 558px;
+        box-shadow: 0 0 50px #3f0c1f;
+        border: 2px solid #3f0c1f;
+        margin-top: 20px;
+    }
+}
+
+
+/*for extra-large devices*/
+@media (min-width:1200px){
+    .jumbotron{
+        background: url('../images/jumbotron_1200.jpg') no-repeat;
+        height: 675px;
+        box-shadow: 0 0 50px #3f0c1f;
+        border: 2px solid #3f0c1f;
+        margin-top: 20px;
+    }   
+}
