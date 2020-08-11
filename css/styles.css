@@ -7,6 +7,13 @@ body {
 .navbar{
     background-color: #f6b319;
 }
+.navbar-light .navbar-nav .nav-link{
+    color: #951c49;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    background: #e7e7e7;;
+    color: #951c49;
+}
 .logo-img{
     width: 150px;
     height: 150px;
@@ -112,7 +119,7 @@ body {
 /*for extra-small devices*/
 @media (max-width:575px) and (min-width:280px){
     .navbar-brand h1{
-        font-size: 1.4em;
+        font-size: 0.8em;
     }
     .navbar-brand p{
         font-size: .7em;
@@ -159,7 +166,7 @@ body {
 /*for small devices*/
 @media (min-width:576px) and (max-width:767px){
     .navbar-brand h1{
-        font-size: 0.7em;
+        font-size: 0.6em;
     }
     .navbar-brand p{
         font-size: .5em;
